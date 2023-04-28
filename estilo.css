@@ -4,6 +4,15 @@ body{
     padding: 0;
 }
 
+#contacto{
+  text-align: center;
+  color: chocolate;
+}
+
+#clases {
+  text-align: center;
+  color: #8a4517;
+}
 
   /* header */
   header {

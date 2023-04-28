@@ -14,7 +14,7 @@
           <ul>
             <li><a href="#clases">Clases</a></li> 
             <li><a href="#calculadora">¡Calcular tu IMC!</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </header>
@@ -27,7 +27,7 @@
             <h3>Maquinas y pesas</h3>
             <img src="./img/maqypesas.jpg" alt="Maquinas" width="300">
             <p>$1900</p>
-            <button>Tomar Clase</button>
+            <button class="BotonTomar">Tomar Clase</button>
           </li>
 
           <br><br>
@@ -36,7 +36,7 @@
             <h3>Clases de Hiit</h3>
             <img src="./img/HIIT.jpeg" alt="Hiit" width="300">
             <p>$2600</p>
-            <button>Tomar clase</button>
+            <button class="BotonTomar">Tomar clase</button>
           </li>
 
           <br><br>
@@ -45,7 +45,7 @@
             <h3>Clases de Funcional</h3>
             <img src="./img/funcional.jpg" alt="Funcional" width="300">
             <p>$1500</p>
-            <button>Tomar clase</button>
+            <button class="BotonTomar">Tomar clase</button>
           </li>
 
           <br><br> 
@@ -54,7 +54,7 @@
             <h3>Clases de Strong</h3>
             <img src="./img/strong.jpg" alt="Strong"  width="300">
             <p>$2000</p>
-            <button>Tomar clase</button>
+            <button class="BotonTomar">Tomar clase</button>
           </li>
 
           <br><br>
@@ -63,7 +63,7 @@
             <h3>Clases de Calistenia</h3>
             <img src="./img/calistenia.jpg" alt="Calistenia"  width="300">
             <p>$1500</p>
-            <button>Tomar clase</button>
+            <button class="BotonTomar">Tomar clase</button>
           </li>
 
         </ul>
@@ -77,11 +77,26 @@
           <input type="number" id="peso" placeholder="Ej: 68">
           <label for="altura">Altura (m):</label>
           <input type="number" id="altura" placeholder="Ej: 1.75">
-          <button onclick="calcularIMC()">Calcular IMC</button>
+          <button class="btnCalcular">Calcular IMC</button>
           <p id="resultado"></p>
+          <div>
+            <p>
+              Clases recomendadas segun tu IMC! 
+              <br><br> <strong> MENOR A 18:</strong> Tienes bajo peso. Te recomendamos cualquiera de nuestras clases acompañada de una buena alimentacion!
+              <br><br> <strong>ENTRE 18 Y 24:</strong>  Tienes el peso ideal. Te recomendamos tomar las clases a tu gusto
+              <br><br> <strong>MAYOR A 25:</strong>  Tienes sobrepeso. Te recomendamos tomar clases de Hiit, Funcional y Strong
+            </p>
+          </div>
+          
         </div>
 
-
+        <H1 id="contacto">Contacto</H1>
+        <p>
+          <strong>Contacta con nuestros nutricionistas! </strong> <br>+54 381832181 <br> Email: nutri@email.com
+        </p>
+        <p>
+          <strong>Contacta con nuestros Profes!</strong> <br>+54 381565465 <br> Email: profes@email.com
+        </p>
 
       <footer>
         <p>Pagina hecha por Esteban Rivas &copy; 2023</p>

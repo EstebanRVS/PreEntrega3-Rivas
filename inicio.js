@@ -1,16 +1,19 @@
 //Tomo los elementos del dom
-const botonTomar = document.querySelectorAll('button');
- 
-let totalValor = 0;
+const botonTomar = document.querySelectorAll('.BotonTomar');
+const btnCalcular = document.querySelectorAll('.btnCalcular')
 
 // Agregar evento click a cada botón de TOMARCLASE
 botonTomar.forEach((boton) => {
   boton.addEventListener('click', () => {
-    
+    alert('Has tomado la clase')
   });
 });
 
 /* CALCULADORA */
+
+//Muestro clases recomendadas
+btnCalcular.addEventListener('click', ()=>calcularIMC())
+
 
 function calcularIMC() {
     let peso = document.getElementById("peso").value;
@@ -24,7 +27,8 @@ function calcularIMC() {
     }
     
     let imc = peso / (altura * altura);
+
     //muestro resultado
     resultado.textContent = "Tu índice de masa corporal es: " + imc.toFixed(2);
-  }
-  
+
+}
