@@ -32,3 +32,4 @@ function calcularIMC() {
     resultado.textContent = "Tu índice de masa corporal es: " + imc.toFixed(2);
 
 }
+

@@ -109,3 +109,11 @@ body{
         font-size: 18px;
         font-weight: bold;
       }
+
+      #contac{
+        text-align: center;
+      }
+
+      #lista{
+       display: inline
+      }
