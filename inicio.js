@@ -5,7 +5,11 @@ const btnCalcular = document.querySelectorAll('.btnCalcular')
 // Agregar evento click a cada botón de TOMARCLASE
 botonTomar.forEach((boton) => {
   boton.addEventListener('click', () => {
-    alert('Has tomado la clase')
+    swal.fire({
+      icon: 'success',
+      title: "Has tomado la clase con exito",
+      footer: 'Para más informacion nuestros datos estan al final de la pagina'
+    })
   });
 });
 

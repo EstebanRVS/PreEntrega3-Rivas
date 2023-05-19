@@ -115,5 +115,14 @@ body{
       }
 
       #lista{
-       display: inline
+       display: flex;
+       display: inline-block;
+       display: inline-flex;
+       align-content: center;
+      }
+
+      .card{
+        border-color: rgb(161, 52, 8);
+        border-style: groove;
+        text-align: center;
       }

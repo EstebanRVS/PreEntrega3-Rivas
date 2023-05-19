@@ -11,8 +11,10 @@ loginForm.addEventListener('submit', (e)=>{
     console.log(validUser)//Validacion
 
     //Mensaje si la validacion es correcta:
-    alert (`Bienvenido/a ${validUser.name}`)
-    
+    swal.fire({
+        icon: 'success',
+        title:`Bienvenido/a ${validUser.name}`
+    })
 
     //mando la info al LS de que el usuario esta registrado
     localStorage.setItem('login_succes', JSON.stringify(validUser))
